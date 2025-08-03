@@ -1,0 +1,9 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+#there are two routes either keep the @chainlink/smartcontracttoolkit or wtv and remap the @chainlink to lib folder where what we need is present or just add the import from lib directly after the install
+remappings = ["@chainlink/contracts/=lib/chainlink-brownie-contracts/contracts/"]
+ffi = true
+#ffi is allowing foundry to run cmds on machine
+# See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
